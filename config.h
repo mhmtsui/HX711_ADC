@@ -24,8 +24,8 @@ Note that you can also overide (reducing) the number of samples in use at any ti
 
 //1 microsecond delay after writing sck pin high or low. Could be required for faster mcu's (but both the Arduino Due and ESP8266 seems to run fine without this delay)
 //Change the value to '1' if delay is required.
-#define SCK_DELAY					0		//default value: 0
+#define SCK_DELAY					1		//default value: 0
 
 //if you have some other time consuming (>60μs) interrupt routines that trigger while the sck pin is high, this could unintentionally set the HX711 into "power down" mode
 //if required you can change the value to '1' to disable interrupts when writing to the sck pin.
-#define SCK_DISABLE_INTERRUPTS		0		//default value: 0
+#define SCK_DISABLE_INTERRUPTS		1		//default value: 0
